@@ -27,7 +27,11 @@
     visibility: hidden;
     z-index: 1000;
     @media (max-width:1190px) {
-        bottom: 10%;
+        bottom: 13%;
+    }
+    @media (max-width:812px) {
+        background: none;
+        bottom: 20%;
     }
     @media (max-width:768px) {
         background: none;
@@ -38,6 +42,24 @@
         height: 30px;
         background: none;
         bottom: 18%;
+    }
+    @media (max-width:320px) {
+        width: 30px;
+        height: 30px;
+        background: none;
+        bottom: 20%;
+    }
+    @media (max-height:414px) {
+        width: 30px;
+        height: 30px;
+        background: none;
+        bottom: 30%;
+    }
+    @media (max-height:320px) {
+        width: 30px;
+        height: 30px;
+        background: none;
+        bottom: 40%;
     }
   }
 
@@ -50,6 +72,9 @@
     line-height: 50px;
     text-align: center;
     color: #fff;
+    @media (max-width:812px) {
+        color: #000;
+    }
     @media (max-width:768px) {
         color: #000;
     }
@@ -57,12 +82,18 @@
   #button:hover {
     cursor: pointer;
     background-color: #333;
+    @media (max-width:812px) {
+        background: none;
+    }
     @media (max-width:768px) {
         background: none;
     }
   }
   #button:active {
     background-color: #555;
+    @media (max-width:812px) {
+        background: none;
+    }
     @media (max-width:768px) {
         background: none;
     }
@@ -70,6 +101,9 @@
   #button.show {
     opacity: 1;
     visibility: visible;
+    @media (max-width:812px) {
+        background: none;
+    }
     @media (max-width:768px) {
         background: none;
     }
@@ -87,7 +121,7 @@
 }
 
 .header{
-    max-width: 1140px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -104,7 +138,7 @@
     .logo_txt{
         width: 150px;
         @media (max-width:767px) {
-            width: 120px;
+            width: 150px;
             margin-top: 3px;
         }
     }
@@ -136,6 +170,9 @@
         @media (max-width:767px) {
             display: none;
         }
+        @media (max-height:414px) {
+            display: none;
+        }
     }
     .active_now{
         a{
@@ -160,6 +197,12 @@
         line-height: 40px;
         margin-bottom: 5px;
     }
+    @media (max-width:320px) {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    
     .span{
         font-weight: bolder;
     }
@@ -174,6 +217,9 @@
         color: #252F3D;
         @media (max-width:767px) {
             font-size: 18px;
+        }
+        @media (max-width:320px) {
+            font-size: 14px;
         }
     }
 
@@ -199,7 +245,9 @@
     letter-spacing: 2px;
     text-align: right;
     margin-top: 20px;
-
+    @media (max-width:320px) {
+        font-size: 14px;
+    }
   }
 
   .mb_sub_text {
@@ -208,6 +256,9 @@
     font-weight: 900;
     text-align: center;
     line-height: 60;
+    @media (max-width:320px) {
+        font-size: 14px;
+    }
   }
 
 .project_title{
@@ -217,6 +268,9 @@
         font-size: 24px;
         padding-bottom: 16px;
         border-bottom: 2px solid #707070;
+        @media (max-width:320px) {
+            font-size: 18px;
+        }
     }
     @media (max-width:767px) {
         margin-top: 40px;
@@ -228,9 +282,15 @@
     h3{
         font-size: 32px;
         font-weight: bolder;
+        @media (max-width:320px) {
+            font-size: 20px;
+        }
     }
     p{
-        line-height: 28px
+        line-height: 28px;
+        @media (max-width:320px) {
+            font-size: 12px;
+        }
     }
     @include project;
     @media (max-width:768px) {
@@ -273,6 +333,9 @@
         font-weight: bolder;
         &:hover{
             color: darken(#707070,50%);}
+        @media (max-width:320px) {
+                font-size: 12px;
+            }
         }
 
     .item_right{
@@ -334,6 +397,9 @@
     padding-bottom: 30px;
     img{
         width: 30px;
+        @media (max-width:320px) {
+            width: 20px;
+        }
     }
     align-items: center;
     .footer_txt{
@@ -347,6 +413,9 @@
             font-size: 30px;
             &:hover{
                 color: darken(#707070,40%)
+            }
+            @media (max-width:320px) {
+                font-size: 20px;
             }
         }
     }
@@ -381,7 +450,12 @@
       display: block;
     }
   }
-  
+  @media (max-height:414px) {
+    .ham-icon {
+        display: block;
+      }
+}
+
 .dropdown {
     position: absolute;
     left: 0;
@@ -392,6 +466,12 @@
     transition: all 0.8s;
     overflow: hidden;
     z-index: 120;
+    @media (max-height:414px) {
+        top: 24%;
+    }
+    @media (max-width:320px) {
+        top: 15%;
+    }
   }
   
 .dropdown.active {
@@ -399,7 +479,7 @@
   }
   
 .dropdown li a {
-    font-size: 16px;
+    font-size: 20px;
     display: block;
     background: #b1b0b0;
     opacity: 1;

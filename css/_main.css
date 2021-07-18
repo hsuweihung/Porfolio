@@ -311,7 +311,13 @@ a {
 }
 @media (max-width: 1190px) {
   #button {
-    bottom: 10%;
+    bottom: 13%;
+  }
+}
+@media (max-width: 812px) {
+  #button {
+    background: none;
+    bottom: 20%;
   }
 }
 @media (max-width: 768px) {
@@ -328,6 +334,30 @@ a {
     bottom: 18%;
   }
 }
+@media (max-width: 320px) {
+  #button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    bottom: 20%;
+  }
+}
+@media (max-height: 414px) {
+  #button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    bottom: 30%;
+  }
+}
+@media (max-height: 320px) {
+  #button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    bottom: 40%;
+  }
+}
 
 #button::after {
   content: "";
@@ -339,6 +369,11 @@ a {
   text-align: center;
   color: #fff;
 }
+@media (max-width: 812px) {
+  #button::after {
+    color: #000;
+  }
+}
 @media (max-width: 768px) {
   #button::after {
     color: #000;
@@ -349,6 +384,11 @@ a {
   cursor: pointer;
   background-color: #333;
 }
+@media (max-width: 812px) {
+  #button:hover {
+    background: none;
+  }
+}
 @media (max-width: 768px) {
   #button:hover {
     background: none;
@@ -357,6 +397,11 @@ a {
 
 #button:active {
   background-color: #555;
+}
+@media (max-width: 812px) {
+  #button:active {
+    background: none;
+  }
 }
 @media (max-width: 768px) {
   #button:active {
@@ -367,6 +412,11 @@ a {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+@media (max-width: 812px) {
+  #button.show {
+    background: none;
+  }
 }
 @media (max-width: 768px) {
   #button.show {
@@ -390,7 +440,7 @@ a {
 }
 
 .header {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,7 +468,7 @@ a {
 }
 @media (max-width: 767px) {
   .header .logo_txt {
-    width: 120px;
+    width: 150px;
     margin-top: 3px;
   }
 }
@@ -459,6 +509,11 @@ a {
     display: none;
   }
 }
+@media (max-height: 414px) {
+  .menu .mb_hidden {
+    display: none;
+  }
+}
 .menu .active_now a {
   color: #707070;
 }
@@ -490,6 +545,13 @@ a {
     margin-bottom: 5px;
   }
 }
+@media (max-width: 320px) {
+  .banner_txt h1 {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
+  }
+}
 .banner_txt h1 .span {
   font-weight: bolder;
 }
@@ -507,6 +569,11 @@ a {
 @media (max-width: 767px) {
   .banner_txt p {
     font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .banner_txt p {
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -534,6 +601,11 @@ a {
   text-align: right;
   margin-top: 20px;
 }
+@media (max-width: 320px) {
+  .mb-text {
+    font-size: 14px;
+  }
+}
 
 .mb_sub_text {
   display: inline-block;
@@ -541,6 +613,11 @@ a {
   font-weight: 900;
   text-align: center;
   line-height: 60;
+}
+@media (max-width: 320px) {
+  .mb_sub_text {
+    font-size: 14px;
+  }
 }
 
 .project_title {
@@ -551,6 +628,11 @@ a {
   font-size: 24px;
   padding-bottom: 16px;
   border-bottom: 2px solid #707070;
+}
+@media (max-width: 320px) {
+  .project_title h1 {
+    font-size: 18px;
+  }
 }
 @media (max-width: 767px) {
   .project_title {
@@ -573,8 +655,18 @@ a {
   font-size: 32px;
   font-weight: bolder;
 }
+@media (max-width: 320px) {
+  .project h3 {
+    font-size: 20px;
+  }
+}
 .project p {
   line-height: 28px;
+}
+@media (max-width: 320px) {
+  .project p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 768px) {
   .project {
@@ -648,6 +740,11 @@ a {
 }
 .more:hover {
   color: black;
+}
+@media (max-width: 320px) {
+  .more {
+    font-size: 12px;
+  }
 }
 
 .item_right {
@@ -745,6 +842,11 @@ a {
 .footer img {
   width: 30px;
 }
+@media (max-width: 320px) {
+  .footer img {
+    width: 20px;
+  }
+}
 .footer .footer_txt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,6 +861,11 @@ a {
 }
 .footer .footer_icon .icon:hover {
   color: #0a0a0a;
+}
+@media (max-width: 320px) {
+  .footer .footer_icon .icon {
+    font-size: 20px;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -787,6 +894,11 @@ a {
     display: block;
   }
 }
+@media (max-height: 414px) {
+  .ham-icon {
+    display: block;
+  }
+}
 .dropdown {
   position: absolute;
   left: 0;
@@ -798,13 +910,23 @@ a {
   overflow: hidden;
   z-index: 120;
 }
+@media (max-height: 414px) {
+  .dropdown {
+    top: 24%;
+  }
+}
+@media (max-width: 320px) {
+  .dropdown {
+    top: 15%;
+  }
+}
 
 .dropdown.active {
   max-height: 300px;
 }
 
 .dropdown li a {
-  font-size: 16px;
+  font-size: 20px;
   display: block;
   background: #b1b0b0;
   opacity: 1;
