@@ -293,15 +293,6 @@ a {
   width: 550px;
 }
 
-.pc_hidden {
-  display: none;
-}
-@media (max-width: 776px) {
-  .pc_hidden {
-    display: block;
-  }
-}
-
 #button {
   display: inline-block;
   background-color: #000;
@@ -331,10 +322,10 @@ a {
 }
 @media (max-width: 767px) {
   #button {
-    width: 5px;
-    height: 5px;
+    width: 30px;
+    height: 30px;
     background: none;
-    bottom: 30%;
+    bottom: 18%;
   }
 }
 
@@ -351,7 +342,6 @@ a {
 @media (max-width: 768px) {
   #button::after {
     color: #000;
-    font-size: 5px;
   }
 }
 
@@ -408,6 +398,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*border-bottom: 2px solid #707070;*/
 }
 .header .logo {
   display: -webkit-box;
@@ -419,7 +410,7 @@ a {
 }
 @media (max-width: 767px) {
   .header .logo_icon {
-    width: 20px;
+    width: 40px;
   }
 }
 .header .logo_txt {
@@ -493,7 +484,7 @@ a {
 }
 @media (max-width: 767px) {
   .banner_txt h1 {
-    font-size: 16px;
+    font-size: 28px;
     line-height: 40px;
     margin-bottom: 5px;
   }
@@ -514,7 +505,7 @@ a {
 }
 @media (max-width: 767px) {
   .banner_txt p {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -534,10 +525,10 @@ a {
 
 .mb-text {
   position: absolute;
-  left: 25%;
+  left: 30%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 8px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-align: right;
   margin-top: 20px;
@@ -545,7 +536,7 @@ a {
 
 .mb_sub_text {
   display: inline-block;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 900;
   text-align: center;
   line-height: 60;
@@ -580,19 +571,8 @@ a {
   font-size: 32px;
   font-weight: bolder;
 }
-@media (max-width: 1190px) {
-  .project h3 {
-    font-size: 14px;
-  }
-}
 .project p {
   line-height: 28px;
-  font-size: 16px;
-}
-@media (max-width: 1190px) {
-  .project p {
-    font-size: 12px;
-  }
 }
 @media (max-width: 768px) {
   .project {
@@ -661,17 +641,11 @@ a {
 }
 
 .more {
-  font-size: 20px;
   color: #707070;
   font-weight: bolder;
 }
 .more:hover {
   color: black;
-}
-@media (max-width: 768px) {
-  .more {
-    font-size: 8px;
-  }
 }
 
 .item_right {
@@ -727,12 +701,7 @@ a {
 }
 
 .project_img {
-  width: 550px;
-}
-@media (max-width: 767px) {
-  .project_img {
-    width: 400px;
-  }
+  width: 600px;
 }
 
 .module_img {
@@ -745,14 +714,14 @@ a {
 }
 @media (max-width: 1190px) {
   .module_img {
-    height: 500px;
+    height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 20%;
        object-position: 20%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .module_img {
     height: 350px;
   }
@@ -771,19 +740,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 768px) {
-  .footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
 .footer img {
   width: 30px;
-}
-@media (max-width: 768px) {
-  .footer img {
-    width: 20px;
-  }
 }
 .footer .footer_txt {
   display: -webkit-box;
@@ -792,12 +750,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
-}
-@media (max-width: 768px) {
-  .footer .footer_txt {
-    font-size: 10px;
-  }
 }
 .footer .footer_icon .icon {
   color: #707070;
@@ -805,11 +757,6 @@ a {
 }
 .footer .footer_icon .icon:hover {
   color: #0a0a0a;
-}
-@media (max-width: 767px) {
-  .footer .footer_icon .icon {
-    display: none;
-  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -820,7 +767,6 @@ a {
 .ham-icon {
   display: none;
   margin-top: 20px;
-  margin-left: 50px;
   border: none;
   color: #707070;
 }
@@ -831,7 +777,7 @@ a {
 }
 
 .ham-icon i {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media (max-width: 767px) {
@@ -842,7 +788,7 @@ a {
 .dropdown {
   position: absolute;
   left: 0;
-  top: 18%;
+  top: 15%;
   width: 100%;
   max-height: 0px;
   -webkit-transition: all 0.8s;
@@ -856,11 +802,13 @@ a {
 }
 
 .dropdown li a {
+  font-size: 30px;
   display: block;
   background: #b1b0b0;
   opacity: 1;
   color: #FFFFFF;
-  padding: 16px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-decoration: none;
   text-align: center;
 }
