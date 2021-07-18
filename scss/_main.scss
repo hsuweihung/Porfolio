@@ -327,6 +327,9 @@
 
 .project_img{
         width: 550px;
+        @media (max-width:767px) {
+            width: 400px;
+        }
     }
     
 .module_img{
@@ -338,6 +341,9 @@
             height: 500px;
             object-fit: cover;
             object-position: 20%
+        }
+        @media (max-width:767px) {
+            height: 350px;
         }
     }
 

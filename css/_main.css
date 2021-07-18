@@ -729,6 +729,11 @@ a {
 .project_img {
   width: 550px;
 }
+@media (max-width: 767px) {
+  .project_img {
+    width: 400px;
+  }
+}
 
 .module_img {
   width: 100%;
@@ -745,6 +750,11 @@ a {
        object-fit: cover;
     -o-object-position: 20%;
        object-position: 20%;
+  }
+}
+@media (max-width: 767px) {
+  .module_img {
+    height: 350px;
   }
 }
 
