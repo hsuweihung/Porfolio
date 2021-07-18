@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="96.382" viewBox="0 0 89 96.382">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d9b300;
+        stroke-width: 10px;
+        font-size: 64px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-1396 -474.248)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-5.221 286.312)">
+      <text id="W" class="cls-1" transform="translate(1414.166 259.1) rotate(1)"><tspan x="0" y="0">W</tspan></text>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-2" width="49.412" height="10.493" transform="translate(1402.663 518.113) rotate(-45)"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-3" transform="translate(1396 476)">
+      <circle class="cls-4" cx="44.5" cy="44.5" r="44.5"/>
+      <circle class="cls-5" cx="44.5" cy="44.5" r="42"/>
+    </g>
+  </g>
+</svg>

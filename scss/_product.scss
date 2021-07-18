@@ -1,0 +1,140 @@
+.banner_product{
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #916000;
+    height: 52px;
+    ul{
+        display: flex;
+    }
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+.pad_hidden_1, .pad_hidden_2{
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+.pad_hidden_1{
+    @media (max-width:1190px) {
+        display: block;
+    }
+}
+
+.pad_hidden_2{
+    @media (max-width:1190px) {
+        display: none;
+    }
+}
+
+.product_wrap_item{
+    display: flex;
+    @media (max-width:1190px) {
+        width: 30%;
+        justify-content: center;
+    }
+    @media (max-width:767px) {
+        width: 45%;
+    }
+}
+
+.product_icon{
+    display: flex;
+}
+
+.product_banner {
+        color: $product_banner-color;
+    }
+
+.product_banner:hover {
+        color: $product_banner-hover-color;
+    }
+
+.product_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width:1190px) {
+        margin-top: -10px;
+    }
+
+    @media (max-width:767px) {
+        margin-top: -20px;
+        h3{
+            font-size: 20px;
+        }
+    }
+}
+
+.product_wrap_content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    .pic .img{
+        width: 255px;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .img_2{
+        width: 255px;
+        height: 350px;
+        object-position: top;
+    }
+}
+
+.pd_icon i{
+    color: #916019;
+    &:hover{
+        color: lighten(#916019,30%);
+    }
+    &:active{
+        color: 	#E0E0E0;
+    }
+}
+
+.pd_icon_1 i{
+    color: #916019;
+    &:hover{
+        color: 	#FF0000;
+    }
+}
+
+.line-through{
+    display: inline-block;
+    color: $line_through;
+    text-decoration: line-through;
+}
+
+.pagination{
+    font-family: $pagination_font-family;
+    font-size: $pagination_font-size;
+    display: flex;
+    justify-content: center;
+    margin-top: 78px;
+    font-size: $pagination-font-size;
+    a{
+        color: $pagination_color;
+        &:hover{
+            color: $pagination_hover_color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.pagination_list{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.product_title_black{
+    color: #000000;
+}

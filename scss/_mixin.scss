@@ -1,0 +1,69 @@
+@mixin project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin module_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+@mixin module_left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin  footer{
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin footer_content {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input_text{
+    width: 360px;
+    height: 60px;
+    border: $bg-orange 2px solid;
+    border-radius: 0px 4px 4px 0px;
+}
+
+@mixin input_info {
+    border: $bg-orange 2px solid;
+    width: 229px;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    a{
+        font-size: 16px;
+    }
+}
+
+@mixin subcribe_text{
+    margin-right: -1px;
+    margin-bottom: -2px;
+    background-color: $bg-orange;
+    padding-top: 21px;
+    padding-left: 27px;
+    color: #FFFF;
+}
+
+
+@mixin mb_hidden {
+    .mb_hidden{
+    display: none;
+} 
+}
+
+@mixin mb-contnet-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
