@@ -11,6 +11,13 @@
     width: 550px;
 }
 
+.pc_hidden{
+    display: none;
+    @media (max-width:776px) {
+        display: block;
+    }
+}
+
 #button {
     display: inline-block;
     background-color: #000;
@@ -34,10 +41,10 @@
         bottom: 13%;
     }
     @media (max-width:767px) {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         background: none;
-        bottom: 20%;
+        bottom: 30%;
     }
   }
 
@@ -91,7 +98,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /*border-bottom: 2px solid #707070;*/
     .logo{
         display: flex;
     }
@@ -156,7 +162,7 @@
     color: #252F3D;
     font-weight: bolder;
     @media (max-width:767px) {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 40px;
         margin-bottom: 5px;
     }
@@ -193,9 +199,9 @@
 
 .mb-text {
     position: absolute;
-    left: 20%;
+    left: 25%;
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: 2px;
     text-align: right;
     margin-top: 20px;
@@ -228,14 +234,14 @@
         font-size: 32px;
         font-weight: bolder;
         @media (max-width:1190px) {
-            font-size: 20px;
+            font-size: 14px;
         }
     }
     p{
         line-height: 28px;
         font-size: 16px;
         @media (max-width:1190px) {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
     @include project;
@@ -282,7 +288,7 @@
         &:hover{
             color: darken(#707070,50%);}
         @media (max-width:768px) {
-                font-size: 12px;
+                font-size: 8px;
             }
         }
 
@@ -319,7 +325,7 @@
     }
 
 .project_img{
-        width: 500px;
+        width: 550px;
     }
     
 .module_img{
@@ -332,9 +338,6 @@
             object-fit: cover;
             object-position: 20%
         }
-        @media (max-width:768px) {
-            height: 350px;
-        }
     }
 
 .footer{
@@ -343,6 +346,10 @@
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
+    @media (max-width:768px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     img{
         width: 30px;
         @media (max-width:768px) {
@@ -355,7 +362,7 @@
         align-items: center;
         font-size: 16px;
         @media (max-width:768px) {
-            font-size: 14px;
+            font-size: 10px;
         }
     }
 
@@ -406,7 +413,7 @@
 .dropdown {
     position: absolute;
     left: 0;
-    top: 15%;
+    top: 18%;
     width: 100%;
     max-height: 0px;
     -webkit-transition: all 0.8s;
@@ -420,7 +427,6 @@
   }
   
 .dropdown li a {
-    font-size: 30px;
     display: block;
     background: #b1b0b0;
     opacity: 1;
