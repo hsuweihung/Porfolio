@@ -418,7 +418,7 @@ a {
 }
 @media (max-width: 767px) {
   .header .logo_txt {
-    width: 100px;
+    width: 120px;
     margin-top: 3px;
   }
 }
