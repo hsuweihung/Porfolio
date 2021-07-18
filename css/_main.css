@@ -331,8 +331,8 @@ a {
 }
 @media (max-width: 767px) {
   #button {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: none;
     bottom: 30%;
   }
@@ -351,6 +351,7 @@ a {
 @media (max-width: 768px) {
   #button::after {
     color: #000;
+    font-size: 5px;
   }
 }
 
@@ -536,7 +537,7 @@ a {
   left: 25%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 10px;
+  font-size: 8px;
   letter-spacing: 2px;
   text-align: right;
   margin-top: 20px;
@@ -809,6 +810,7 @@ a {
 .ham-icon {
   display: none;
   margin-top: 20px;
+  margin-left: 50px;
   border: none;
   color: #707070;
 }
@@ -848,8 +850,7 @@ a {
   background: #b1b0b0;
   opacity: 1;
   color: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 16px 0;
   text-decoration: none;
   text-align: center;
 }
