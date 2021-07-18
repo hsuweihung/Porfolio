@@ -34,10 +34,10 @@
         bottom: 13%;
     }
     @media (max-width:767px) {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
         background: none;
-        bottom: 18%;
+        bottom: 20%;
     }
   }
 
@@ -98,7 +98,7 @@
     .logo_icon{
         width: 30px;
         @media (max-width:767px) {
-            width: 40px;
+            width: 20px;
         }
     }
     .logo_txt{
@@ -107,6 +107,7 @@
             display: none;
         }
     }
+
     @media (max-width:1190px) {
         width: 100%;
         justify-content: space-around;
@@ -155,7 +156,7 @@
     color: #252F3D;
     font-weight: bolder;
     @media (max-width:767px) {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 40px;
         margin-bottom: 5px;
     }
@@ -172,7 +173,7 @@
         text-align: center;
         color: #252F3D;
         @media (max-width:767px) {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 
@@ -192,9 +193,9 @@
 
 .mb-text {
     position: absolute;
-    left: 30%;
+    left: 20%;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: right;
     margin-top: 20px;
@@ -203,7 +204,7 @@
 
   .mb_sub_text {
     display: inline-block;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 900;
     text-align: center;
     line-height: 60;
@@ -226,14 +227,22 @@
     h3{
         font-size: 32px;
         font-weight: bolder;
+        @media (max-width:1190px) {
+            font-size: 20px;
+        }
     }
     p{
-        line-height: 28px
+        line-height: 28px;
+        font-size: 16px;
+        @media (max-width:1190px) {
+            font-size: 14px;
+        }
     }
     @include project;
     @media (max-width:768px) {
         margin-bottom: -50px;
     }
+
     .module_right{
         @include module_right;
         @media (max-width:1190px) {
@@ -267,10 +276,14 @@
     }
 
     .more{
+        font-size: 20px;
         color: #707070;
         font-weight: bolder;
         &:hover{
             color: darken(#707070,50%);}
+        @media (max-width:768px) {
+                font-size: 12px;
+            }
         }
 
     .item_right{
@@ -306,7 +319,7 @@
     }
 
 .project_img{
-        width: 600px;
+        width: 500px;
     }
     
 .module_img{
@@ -315,7 +328,7 @@
         object-fit: cover;
         object-position:left;
         @media (max-width:1190px) {
-            height: 400px;
+            height: 500px;
             object-fit: cover;
             object-position: 20%
         }
@@ -332,11 +345,18 @@
     padding-bottom: 30px;
     img{
         width: 30px;
+        @media (max-width:768px) {
+            width: 20px;
+        }
     }
     align-items: center;
     .footer_txt{
         display: flex;
         align-items: center;
+        font-size: 16px;
+        @media (max-width:768px) {
+            font-size: 14px;
+        }
     }
 
     .footer_icon{
@@ -345,6 +365,9 @@
             font-size: 30px;
             &:hover{
                 color: darken(#707070,40%)
+            }
+            @media (max-width:767px) {
+                display: none;
             }
         }
     }
@@ -362,7 +385,6 @@
 
 .ham-icon {
     display: none;
-    margin-left: 200px;
     margin-top: 20px;
     border:none;
     color: #707070;
@@ -372,7 +394,7 @@
   }
 
 .ham-icon i {
-    font-size: 30px;
+    font-size: 20px;
   }
   
   @media (max-width: 767px) {
