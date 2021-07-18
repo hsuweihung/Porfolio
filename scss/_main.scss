@@ -37,7 +37,6 @@
         width: 30px;
         height: 30px;
         background: none;
-        bottom: 18%;
     }
   }
 
@@ -98,16 +97,16 @@
     .logo_icon{
         width: 30px;
         @media (max-width:767px) {
-            width: 40px;
+            width: 30px;
         }
     }
     .logo_txt{
         width: 150px;
         @media (max-width:767px) {
-            display: none;
+            width: 100px;
+            margin-top: 3px;
         }
     }
-
     @media (max-width:1190px) {
         width: 100%;
         justify-content: space-around;
@@ -394,17 +393,17 @@
   }
   
 .dropdown.active {
-    max-height: 500px;
+    max-height: 300px;
   }
   
 .dropdown li a {
-    font-size: 30px;
+    font-size: 16px;
     display: block;
     background: #b1b0b0;
     opacity: 1;
     color: #FFFFFF;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
     text-decoration: none;
     text-align: center;
   }
