@@ -11,3 +11,14 @@ $(function () {
         loop: true
     });
 });
+
+$(function () {
+    $(".mb_sub_text_work").typed({
+        strings: ["Framer X", "HTML", "CSS", "SASS"],
+        typeSpeed: 70,
+        backSpeed: 20,
+        backDelay: 1500,
+        showCursor: true,
+        loop: true
+    });
+});

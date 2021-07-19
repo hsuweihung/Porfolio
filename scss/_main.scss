@@ -5,6 +5,8 @@
 @import "mixin";
 @import "reset";
 
+
+
 .trigger-menu-wrapper {
     position: fixed;
     top: 0;
@@ -132,10 +134,9 @@
 }
 
 .header{
-    max-width: 1240px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #121212;
     /*border-bottom: 2px solid #707070;*/
     .logo{
         display: flex;
@@ -171,11 +172,11 @@
     font-weight: bolder;
     .mb_hidden{
         a{
-            color: lighten(#707070,30%);
+            color: #b1afaf;
             font-size: 18px;
         &:hover{
             transition:color 1s;
-            color: #707070;
+            color: #FFFFFF;
             
         }
     }
@@ -188,7 +189,10 @@
     }
     .active_now{
         a{
-        color: #707070;
+        color: #FFFFFF;
+        &:hover{
+            color: #FFFFFF;
+        }
     }
     }
 }
@@ -263,7 +267,7 @@
     }
   }
 
-  .mb_sub_text {
+  .mb_sub_text, .mb_sub_text_work {
     display: inline-block;
     font-size: 10px;
     font-weight: 900;
@@ -280,7 +284,7 @@
         display: inline;
         font-size: 24px;
         padding-bottom: 16px;
-        border-bottom: 2px solid #707070;
+        border-bottom: 2px solid #000;
         @media (max-width:320px) {
             font-size: 18px;
         }
@@ -342,10 +346,18 @@
     }
 
     .more{
-        color: #707070;
+        color: #000;
         font-weight: bolder;
+        padding: 10px;
+        border: #121212 2px solid;
+        background-color: #FFFFFF;
+        border-radius: 10px;
         &:hover{
-            color: darken(#707070,50%);}
+            background-color: #e9e9e9;
+            opacity: 0.9;
+            color: #000;
+            transition:background-color 1s;     
+        }
         @media (max-width:320px) {
                 font-size: 12px;
             }
@@ -404,28 +416,41 @@
 
 .footer{
     display: flex;
+    background-color: #121212;
     border-top: 2px solid #F0F0F0;
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
     img{
         width: 30px;
+        @media (max-width:767px) {
+            width: 20px;
+        }
         @media (max-width:320px) {
             width: 20px;
         }
     }
     align-items: center;
     .footer_txt{
+        font-size: 20px;
         display: flex;
+        color: #FFFFFF;
+        font-weight: lighter;
         align-items: center;
+        @media (max-width:767px) {
+            font-size: 10px;
+        }
     }
 
     .footer_icon{
         .icon{
-            color: #707070;
+            color: #FFFFFF;
             font-size: 30px;
             &:hover{
-                color: darken(#707070,40%)
+                transform:scale(1.2,1.2)
+            }
+            @media (max-width:767px) {
+                font-size: 20px;
             }
             @media (max-width:320px) {
                 font-size: 20px;
@@ -448,14 +473,14 @@
     display: none;
     margin-top: 20px;
     border:none;
-    color: #707070;
+    color: #FFFFFF;
     @media (max-width: 767px) {
         margin-top: 5px;
       }
   }
 
 .ham-icon i {
-    font-size: 30px;
+    font-size: 20px;
   }
   
   @media (max-width: 767px) {
@@ -476,43 +501,36 @@
     width: 100%;
     max-height: 0px;
     -webkit-transition: all 0.8s;
-    transition: all 0.8s;
+    transition: all 0.7s;
     overflow: hidden;
     z-index: 120;
-    @media (max-height:414px) {
-        top: 100%;
-    }
-    @media (max-width:320px) {
-        top: 100%;
-    }
   }
   
 .dropdown.active {
-    max-height: 300px;
+    max-height: 414px;
   }
   
 .dropdown li a {
-    font-size: 20px;
+    font-size: 30px;
     display: block;
-    background: #b1b0b0;
-    opacity: 1;
+    background: #121212;
+    opacity: 0.97;
     color: #FFFFFF;
-    padding-top:20px;
-    padding-bottom:20px;
+    font-weight: bolder;
+    padding-top:30px;
+    padding-bottom:30px;
     text-decoration: none;
     text-align: center;
   }
   
 .dropdown li a {
     &:hover{
-        background: darken(#b1b0b0,40%);
+        background:#e4e4e4;
+        color: #000;
     }
   }
 
-.dropdown .login_active{
-    background-color: #c7c7c7;
-}
-
-.dropdown .product_active{
-    background-color: #c7c7c7;
+.dropdown .active_page{
+    background:#e4e4e4;
+    color: #000;
 }

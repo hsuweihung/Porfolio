@@ -459,14 +459,12 @@ a {
 }
 
 .header {
-  max-width: 1240px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #121212;
   /*border-bottom: 2px solid #707070;*/
 }
 .header .logo {
@@ -516,13 +514,13 @@ a {
   font-weight: bolder;
 }
 .menu .mb_hidden a {
-  color: #bdbdbd;
+  color: #b1afaf;
   font-size: 18px;
 }
 .menu .mb_hidden a:hover {
   -webkit-transition: color 1s;
   transition: color 1s;
-  color: #707070;
+  color: #FFFFFF;
 }
 @media (max-width: 767px) {
   .menu .mb_hidden {
@@ -535,7 +533,10 @@ a {
   }
 }
 .menu .active_now a {
-  color: #707070;
+  color: #FFFFFF;
+}
+.menu .active_now a:hover {
+  color: #FFFFFF;
 }
 
 .banner_txt {
@@ -628,7 +629,7 @@ a {
   }
 }
 
-.mb_sub_text {
+.mb_sub_text, .mb_sub_text_work {
   display: inline-block;
   font-size: 10px;
   font-weight: 900;
@@ -636,7 +637,7 @@ a {
   line-height: 60;
 }
 @media (max-width: 320px) {
-  .mb_sub_text {
+  .mb_sub_text, .mb_sub_text_work {
     font-size: 14px;
   }
 }
@@ -648,7 +649,7 @@ a {
   display: inline;
   font-size: 24px;
   padding-bottom: 16px;
-  border-bottom: 2px solid #707070;
+  border-bottom: 2px solid #000;
 }
 @media (max-width: 320px) {
   .project_title h1 {
@@ -756,11 +757,19 @@ a {
 }
 
 .more {
-  color: #707070;
+  color: #000;
   font-weight: bolder;
+  padding: 10px;
+  border: #121212 2px solid;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 .more:hover {
-  color: black;
+  background-color: #e9e9e9;
+  opacity: 0.9;
+  color: #000;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 @media (max-width: 320px) {
   .more {
@@ -851,6 +860,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #121212;
   border-top: 2px solid #F0F0F0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -863,25 +873,44 @@ a {
 .footer img {
   width: 30px;
 }
+@media (max-width: 767px) {
+  .footer img {
+    width: 20px;
+  }
+}
 @media (max-width: 320px) {
   .footer img {
     width: 20px;
   }
 }
 .footer .footer_txt {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #FFFFFF;
+  font-weight: lighter;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767px) {
+  .footer .footer_txt {
+    font-size: 10px;
+  }
+}
 .footer .footer_icon .icon {
-  color: #707070;
+  color: #FFFFFF;
   font-size: 30px;
 }
 .footer .footer_icon .icon:hover {
-  color: #0a0a0a;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+@media (max-width: 767px) {
+  .footer .footer_icon .icon {
+    font-size: 20px;
+  }
 }
 @media (max-width: 320px) {
   .footer .footer_icon .icon {
@@ -898,7 +927,7 @@ a {
   display: none;
   margin-top: 20px;
   border: none;
-  color: #707070;
+  color: #FFFFFF;
 }
 @media (max-width: 767px) {
   .ham-icon {
@@ -907,7 +936,7 @@ a {
 }
 
 .ham-icon i {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -927,45 +956,35 @@ a {
   width: 100%;
   max-height: 0px;
   -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   overflow: hidden;
   z-index: 120;
 }
-@media (max-height: 414px) {
-  .dropdown {
-    top: 100%;
-  }
-}
-@media (max-width: 320px) {
-  .dropdown {
-    top: 100%;
-  }
-}
 
 .dropdown.active {
-  max-height: 300px;
+  max-height: 414px;
 }
 
 .dropdown li a {
-  font-size: 20px;
+  font-size: 30px;
   display: block;
-  background: #b1b0b0;
-  opacity: 1;
+  background: #121212;
+  opacity: 0.97;
   color: #FFFFFF;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-weight: bolder;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-decoration: none;
   text-align: center;
 }
 
 .dropdown li a:hover {
-  background: #4b4a4a;
+  background: #e4e4e4;
+  color: #000;
 }
 
-.dropdown .login_active {
-  background-color: #c7c7c7;
-}
-
-.dropdown .product_active {
-  background-color: #c7c7c7;
+.dropdown .active_page {
+  background: #e4e4e4;
+  color: #000;
 }
