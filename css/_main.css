@@ -480,6 +480,7 @@ a {
 @media (max-width: 767px) {
   .header .logo_icon {
     width: 30px;
+    margin-right: 5px;
   }
 }
 .header .logo_txt {
@@ -487,8 +488,8 @@ a {
 }
 @media (max-width: 767px) {
   .header .logo_txt {
-    width: 180px;
-    margin-top: 3px;
+    width: 100px;
+    margin-top: 7px;
   }
 }
 @media (max-width: 1190px) {

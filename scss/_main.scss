@@ -144,13 +144,14 @@
         width: 30px;
         @media (max-width:767px) {
             width: 30px;
+            margin-right: 5px;
         }
     }
     .logo_txt{
         width: 150px;
         @media (max-width:767px) {
-            width: 180px;
-            margin-top: 3px;
+            width: 100px;
+            margin-top: 7px;
         }
     }
     @media (max-width:1190px) {
