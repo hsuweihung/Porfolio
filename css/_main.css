@@ -183,6 +183,10 @@
   margin-left: 405px;
 }
 
+.pad_t_60 {
+  padding-top: 60px;
+}
+
 .pad_t_252 {
   padding-top: 252px;
 }
@@ -287,10 +291,25 @@ a {
   text-decoration: none;
 }
 
-.product_img_white {
-  background-color: #FFF;
-  height: 300px;
-  width: 550px;
+.trigger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.wrap section {
+  position: relative;
+  height: 100vh;
 }
 
 #button {
@@ -529,6 +548,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 300px;
 }
 .banner_txt h1 {
   font-size: 50px;
@@ -636,7 +656,7 @@ a {
 }
 @media (max-width: 767px) {
   .project_title {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 40px;
   }
 }
@@ -902,7 +922,7 @@ a {
 .dropdown {
   position: absolute;
   left: 0;
-  top: 15%;
+  top: 100%;
   width: 100%;
   max-height: 0px;
   -webkit-transition: all 0.8s;
@@ -912,12 +932,12 @@ a {
 }
 @media (max-height: 414px) {
   .dropdown {
-    top: 24%;
+    top: 100%;
   }
 }
 @media (max-width: 320px) {
   .dropdown {
-    top: 15%;
+    top: 100%;
   }
 }
 
