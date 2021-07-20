@@ -14,8 +14,8 @@ $(function () {
 
 $(function () {
     $(".mb_sub_text_work").typed({
-        strings: ["Framer X", "HTML", "CSS", "SASS"],
-        typeSpeed: 70,
+        strings: ["Framer X", "HTML + CSS (SASS)", "Some JavaScript"],
+        typeSpeed: 80,
         backSpeed: 20,
         backDelay: 1500,
         showCursor: true,

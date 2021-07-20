@@ -136,7 +136,6 @@
 .header{
     display: flex;
     justify-content: space-around;
-    background-color: darken(#FCFCFC,1%);
     /*border-bottom: 2px solid #707070;*/
     .logo{
         display: flex;
@@ -145,7 +144,6 @@
         width: 30px;
         @media (max-width:767px) {
             width: 30px;
-            margin-right: 5px;
         }
     }
     .logo_txt{
@@ -157,11 +155,13 @@
     }
     @media (max-width:1190px) {
         width: 100%;
+        background-color: darken(#FCFCFC,1%);
         justify-content: space-around;
         border-bottom: none;
     }
     
     @media (max-width:767px) {
+        background-color: darken(#FCFCFC,1%);
         width: 100%;
     }
 }
@@ -202,6 +202,7 @@
     flex-direction: column;
     justify-content: center;
     max-height: 300px;
+
     h1{
     font-size: 50px;
     font-family: sans-serif;
@@ -280,13 +281,37 @@
 
 .project_title{
     text-align: center;
+    font-size: 24px;
     h1{
         display: inline;
-        font-size: 24px;
+        font-size: 32px;
         padding-bottom: 16px;
         border-bottom: 2px solid #000;
         @media (max-width:320px) {
             font-size: 18px;
+        }
+        @media (max-width:767px) {
+            font-size: 24px;
+        }
+    }
+    @media (max-width:767px) {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+}
+
+.work_title{
+    text-align: center;
+    h1{
+        display: inline;
+        font-size: 32px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #000;
+        @media (max-width:320px) {
+            font-size: 18px;
+        }
+        @media (max-width:767px) {
+            font-size: 24px;
         }
     }
     @media (max-width:767px) {
@@ -458,6 +483,13 @@
     }
 }
 
+.work_top_title{
+    h1{
+    @media (max-width:767px) {
+        font-size: 20px;
+    }
+}
+}
 
 
 .module_card{
@@ -473,17 +505,29 @@
         margin-right: 0px;
         margin-bottom: 100px;
     }
+    h3{
+        font-size: 24px;
+    }
 }
+
+.card_2{
+    h3{
+    font-size: 24px;
+    }
+}
+
 .more_work{
-    color: #000;
     font-weight: bolder;
     background-color: #F7C244;
+    color: #FFFFFF;
     border-radius: 10px;
     padding: 10px;
     &:hover{
-        background-color: lighten(#F7C244,10%);
-        color: #000;
-        transition:background-color 1s;     
+        border:  2px solid #F7C244;
+        background-color: white;
+        color: #F7C244;
+        transition:background-color 2s; 
+        transition:color 0.5s;     
     }
     @media (max-width:320px) {
             font-size: 12px;
@@ -491,11 +535,11 @@
     }
 }
 
-
-
-
-
-
+.about{
+    img{
+        width: 350px;
+    }
+}
 
 .ham-icon {
     display: none;
