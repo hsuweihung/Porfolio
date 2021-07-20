@@ -136,7 +136,7 @@
 .header{
     display: flex;
     justify-content: space-around;
-    background-color: #121212;
+    background-color: darken(#FCFCFC,1%);
     /*border-bottom: 2px solid #707070;*/
     .logo{
         display: flex;
@@ -172,11 +172,11 @@
     font-weight: bolder;
     .mb_hidden{
         a{
-            color: #b1afaf;
+            color: #252F3D;
             font-size: 18px;
         &:hover{
             transition:color 1s;
-            color: #FFFFFF;
+            color: #b1afaf;
             
         }
     }
@@ -189,9 +189,9 @@
     }
     .active_now{
         a{
-        color: #FFFFFF;
+        color: #b1afaf;
         &:hover{
-            color: #FFFFFF;
+            color: #b1afaf;
         }
     }
     }
@@ -324,8 +324,8 @@
         @media (max-width:768px) {
             width: 100%;
             flex-wrap: wrap;
-            margin-top: 40px;
-            margin-bottom: 32px;
+            margin-top: 60px;
+            margin-bottom: 40px;
         }
     }
     .module_left{
@@ -339,22 +339,19 @@
         @media (max-width:768px) {
             width: 100%;
             flex-wrap: wrap;
-            margin-top: 40px;
-            margin-bottom: 32px;
+            margin-top: 60px;
+            margin-bottom: 40px;
         }
     }
     }
 
     .more{
-        color: #000;
+        color: rgb(97, 97, 97);
         font-weight: bolder;
-        padding: 10px;
-        border: #121212 2px solid;
-        background-color: #FFFFFF;
-        border-radius: 10px;
+        /*background-color: #F7C244;
+        border-radius: 10px;*/
         &:hover{
-            background-color: #e9e9e9;
-            opacity: 0.9;
+            /*background-color: lighten(#F7C244,10%);*/
             color: #000;
             transition:background-color 1s;     
         }
@@ -416,7 +413,6 @@
 
 .footer{
     display: flex;
-    background-color: #121212;
     border-top: 2px solid #F0F0F0;
     justify-content: space-around;
     padding-top: 30px;
@@ -434,7 +430,7 @@
     .footer_txt{
         font-size: 20px;
         display: flex;
-        color: #FFFFFF;
+        color: #252F3D;
         font-weight: lighter;
         align-items: center;
         @media (max-width:767px) {
@@ -444,7 +440,7 @@
 
     .footer_icon{
         .icon{
-            color: #FFFFFF;
+            color: #252F3D;
             font-size: 30px;
             &:hover{
                 transform:scale(1.2,1.2)
@@ -464,6 +460,38 @@
 
 
 
+.module_card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+    width: 350px;
+}
+.card_1{
+    margin-right: 100px;
+    @media (max-width:768px) {
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+}
+.more_work{
+    color: #000;
+    font-weight: bolder;
+    background-color: #F7C244;
+    border-radius: 10px;
+    padding: 10px;
+    &:hover{
+        background-color: lighten(#F7C244,10%);
+        color: #000;
+        transition:background-color 1s;     
+    }
+    @media (max-width:320px) {
+            font-size: 12px;
+        }
+    }
+}
+
+
 
 
 
@@ -473,7 +501,7 @@
     display: none;
     margin-top: 20px;
     border:none;
-    color: #FFFFFF;
+    color: #252F3D;
     @media (max-width: 767px) {
         margin-top: 5px;
       }
@@ -513,8 +541,8 @@
 .dropdown li a {
     font-size: 30px;
     display: block;
-    background: #121212;
-    opacity: 0.97;
+    background:#e4e4e4;
+    opacity: 0.98;
     color: #FFFFFF;
     font-weight: bolder;
     padding-top:30px;
@@ -525,12 +553,14 @@
   
 .dropdown li a {
     &:hover{
-        background:#e4e4e4;
-        color: #000;
+        background: #121212;
+    }
+    &:active{
+        background: #121212;
     }
   }
 
 .dropdown .active_page{
-    background:#e4e4e4;
-    color: #000;
+    background: #121212;
+    color: #FFFFFF;
 }
