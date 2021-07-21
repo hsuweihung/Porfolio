@@ -211,8 +211,16 @@
   padding-right: 5px;
 }
 
+.pad_b_20 {
+  padding-bottom: 20px;
+}
+
 .pad_b_40 {
   padding-bottom: 40px;
+}
+
+.pad_b_60 {
+  padding-bottom: 60px;
 }
 
 .pad_r_11 {
@@ -559,14 +567,21 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 300px;
+  max-height: 800px;
+  background-color: #273140;
+}
+@media (max-width: 1190px) {
+  .banner_txt {
+    max-height: 350px;
+    margin-bottom: 50px;
+  }
 }
 .banner_txt h1 {
   font-size: 50px;
   font-family: SF Pro Text;
   line-height: 80px;
   text-align: center;
-  color: #252F3D;
+  color: #FFFFFF;
   font-weight: bolder;
 }
 @media (max-width: 767px) {
@@ -622,6 +637,17 @@ a {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 767px) {
+  .banner_txt .mb_top {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .pad {
+    padding-bottom: 60px;
+  }
+}
 
 .mb-text {
   position: absolute;
@@ -632,10 +658,10 @@ a {
   letter-spacing: 2px;
   text-align: right;
   margin-top: 20px;
-  color: #252F3D;
+  color: #b1afaf;
 }
 .mb-text p {
-  color: #252F3D;
+  color: #b1afaf;
 }
 @media (max-width: 320px) {
   .mb-text {
@@ -920,9 +946,26 @@ a {
   }
 }
 
+.work_top_title h1 {
+  font-size: 50px;
+  font-family: SF Pro Text;
+  line-height: 80px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
 @media (max-width: 767px) {
   .work_top_title h1 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .work_top_title h1 {
     font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1015,12 +1058,17 @@ a {
 .about .about_txt h2 {
   font-size: 36px;
   font-weight: bold;
+  border: #e4ae60 5px solid;
+  display: inline-block;
+  padding: 20px;
 }
 @media (max-width: 1190px) {
   .about .about_txt h2 {
     font-family: 24px;
     text-align: center;
     margin-top: 40px;
+    border: none;
+    display: block;
   }
 }
 .about .about_txt p {
@@ -1039,6 +1087,10 @@ a {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+.about .about_txt .intro_me {
+  border: #252F3D 5px solid;
+  padding: 20px;
 }
 
 .connect {

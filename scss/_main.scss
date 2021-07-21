@@ -194,13 +194,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 300px;
+    max-height: 800px;
+    background-color: lighten(#252F3D,1%);
+    @media (max-width:1190px) {
+        max-height: 350px;
+        margin-bottom: 50px;
+    }
     h1{
     font-size: 50px;
     font-family: $font_page_title_family;
     line-height: 80px;
     text-align: center;
-    color: $font_page_title_color;
+    color: #FFFFFF;
     font-weight: bolder;
     @media (max-width:767px) {
         font-size: 28px;
@@ -246,6 +251,19 @@
             margin-bottom: 50px;
         }
     }
+
+    .mb_top{
+        @media (max-width:767px) {
+            margin-top: 50px;
+        }
+    }
+
+}
+
+.pad{
+    @media (max-width:1190px) {
+        padding-bottom: 60px;
+    }
 }
 
 .mb-text {
@@ -256,9 +274,9 @@
     letter-spacing: 2px;
     text-align: right;
     margin-top: 20px;
-    color: #252F3D;
+    color: #b1afaf;
     p{
-        color: #252F3D;
+        color: #b1afaf;
         }
     @media (max-width:320px) {
         font-size: 14px;
@@ -451,10 +469,23 @@
 
 .work_top_title{
     h1{
-    @media (max-width:767px) {
-        font-size: 20px;
+        font-size: 50px;
+        font-family: $font_page_title_family;
+        line-height: 80px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bolder;
+        @media (max-width:767px) {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+        @media (max-width:320px) {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
     }
-}
 }
 
 
@@ -529,10 +560,15 @@
         h2{
             font-size: 36px;
             font-weight: bold;
+            border:  lighten(#916019,30%) 5px solid;
+            display: inline-block;
+            padding: 20px;
             @media (max-width:1190px) {
                 font-family: 24px;
                 text-align: center;
                 margin-top: 40px;
+                border:none;
+                display: block;
             }
         }
         p{
@@ -547,6 +583,10 @@
         @media (max-width:1190px) {
             margin-left: 20px;
             margin-right: 20px;
+        }
+        .intro_me{
+            border: #252F3D 5px solid;
+            padding: 20px;
         }
     }
 }
