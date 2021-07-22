@@ -292,7 +292,7 @@
   @-webkit-keyframes fadeInUp {
       0% {
           opacity: 0;
-          -webkit-transform: translateY(10px);
+          -webkit-transform: translateY(1px);
       }	100% {
           opacity: 1;
           -webkit-transform: translateY(0);
@@ -302,7 +302,7 @@
   @-moz-keyframes fadeInUp {
       0% {
           opacity: 0;
-          -moz-transform: translateY(10px);
+          -moz-transform: translateY(1px);
       }
   
       100% {
@@ -314,7 +314,7 @@
   @-o-keyframes fadeInUp {
       0% {
           opacity: 0;
-          -o-transform: translateY(10px);
+          -o-transform: translateY(1px);
       }
   
       100% {
@@ -326,7 +326,7 @@
   @keyframes fadeInUp {
       0% {
           opacity: 0;
-          transform: translateY(10px);
+          transform: translateY(1px);
       }
   
       100% {

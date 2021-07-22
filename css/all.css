@@ -1013,7 +1013,6 @@ a {
 
 .module_img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left;
@@ -1031,6 +1030,12 @@ a {
 @media (max-width: 768px) {
   .module_img {
     height: 350px;
+  }
+}
+@media (max-height: 414px) {
+  .module_img {
+    height: 250px;
+    margin-top: 50px;
   }
 }
 
@@ -1585,7 +1590,7 @@ a {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
+    -webkit-transform: translateY(1px);
   }
   100% {
     opacity: 1;
@@ -1595,8 +1600,8 @@ a {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
   100% {
     opacity: 1;
