@@ -169,8 +169,7 @@
             font-size: 18px;
         &:hover{
             transition:color 1s;
-            color: #b1afaf;
-            
+            color: #b1afaf;   
         }
     }
         @media (max-width:767px) {
@@ -866,7 +865,11 @@
 }
 
 .hidden_txt{
-    @media (max-width:768px) {
+    @media (max-width:1190px) {
         display: none;
     }
+}
+
+.apple{
+    display: none;
 }
