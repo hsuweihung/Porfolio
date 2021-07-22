@@ -487,6 +487,9 @@
         }
 
     .item_right{
+        h3{
+            color: #252F3D;
+            }
         display: flex;
         max-width: 550px;
         align-items: center;
@@ -497,11 +500,16 @@
             margin-left: 0px;
         }
         a{
-            color: #252F3D;
+            @media (max-width:768px) {
+                color: #252F3D;
+            }
         }
     }
 
     .item{
+        h3{
+            color: #252F3D;
+            }
         display: flex;
         align-items: center;
         justify-content: center;
@@ -513,7 +521,9 @@
             margin-right: 0px;
         }
         a{
-            color: #252F3D;
+            @media (max-width:768px) {
+                color: #252F3D;
+            }
         }
     }
 
@@ -874,7 +884,7 @@
 }
 
 .hidden_txt{
-    @media (max-width:1190px) {
+    @media (max-width:768px) {
         display: none;
     }
 }
