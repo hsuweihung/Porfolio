@@ -13,7 +13,7 @@ $(document).ready(function () {
 
       /* If the object is completely visible in the window, fade it in */
       if (bottom_of_window > bottom_of_object) {
-        $(this).animate({ 'opacity': '1' }, 20);
+        $(this).animate({ 'opacity': '1' }, 80);
         /* 1500 is the duration of fade effect */
       }
     });

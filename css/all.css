@@ -975,6 +975,9 @@ a {
     margin-left: 0px;
   }
 }
+.item_right a {
+  color: #252F3D;
+}
 
 .item {
   display: -webkit-box;
@@ -996,6 +999,9 @@ a {
     margin-top: 8px;
     margin-right: 0px;
   }
+}
+.item a {
+  color: #252F3D;
 }
 
 .text {
