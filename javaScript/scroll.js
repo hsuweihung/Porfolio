@@ -20,7 +20,7 @@ function LandingPageScrollTrigger() {
             opacity: 0, x: "-31%", duration: 2.2, ease: "sine.in",
         }, 0)*/
         .from('.landingPage .header .menu .anination_active a', {
-            opacity: 0, x: "70%", duration: 1.5, stagger: 0.2, ease: "sine.inOut",
+            opacity: 0, x: "70%", duration: 0.5, stagger: 0.2, ease: "sine.inOut",
         }, 0.2)
         .from('.wrap .banner_txt .mb_top h1 span', {
             opacity: 0, x: "-22%", duration: 1.0, ease: "sine.inOut",
