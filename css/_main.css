@@ -946,6 +946,7 @@ a {
 @media (max-width: 767px) {
   .more {
     font-size: 14px;
+    margin-left: 40px;
   }
 }
 @media (max-width: 320px) {
@@ -1020,7 +1021,7 @@ a {
 }
 @media (max-width: 1190px) {
   .module_img {
-    height: 400px;
+    height: 350px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 20%;
@@ -1429,5 +1430,11 @@ a {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden_txt {
+    display: none;
   }
 }

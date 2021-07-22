@@ -314,6 +314,7 @@
             display: none;
         }
     }
+
     .pc_hidden_txt{
         display: none;
         @media (max-width:767px) {
@@ -479,6 +480,7 @@
         }
         @media (max-width:767px) {
             font-size: 14px;
+            margin-left: 40px;
         }
         @media (max-width:320px) {
                 font-size: 12px;
@@ -527,7 +529,7 @@
         object-fit: cover;
         object-position:left;
         @media (max-width:1190px) {
-            height: 400px;
+            height: 350px;
             object-fit: cover;
             object-position: 20%
         }
@@ -860,5 +862,11 @@
             margin-right: 15px;
             margin-top: 15px;
         }
+    }
+}
+
+.hidden_txt{
+    @media (max-width:768px) {
+        display: none;
     }
 }

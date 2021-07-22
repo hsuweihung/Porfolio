@@ -10,10 +10,10 @@
 jQuery(function ($) {
 
   // Function which adds the 'animated' class to any '.animatable' in view
-  var doAnimations = function () {
+  let doAnimations = function () {
 
     // Calc current offset and get all animatables
-    var offset = $(window).scrollTop() + $(window).height(),
+    let offset = $(window).scrollTop() + $(window).height(),
       $animatables = $('.animatable');
 
     // Unbind scroll handler if we have no animatables
@@ -23,8 +23,8 @@ jQuery(function ($) {
 
     // Check all animatables and animate them if necessary
     $animatables.each(function (i) {
-      var $animatable = $(this);
-      if (($animatable.offset().top + $animatable.height() - 0.1) < offset) {
+      let $animatable = $(this);
+      if (($animatable.offset().top + $animatable.height()) < offset) {
         $animatable.removeClass('animatable').addClass('animated');
       }
     });
