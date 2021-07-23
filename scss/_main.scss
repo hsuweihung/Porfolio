@@ -132,6 +132,7 @@
 .header{
     display: flex;
     justify-content: space-around;
+    background-color:lighten(#121212,5%);
     .logo{
         display: flex;
     }
@@ -163,13 +164,14 @@
     display: flex;
     align-items: center;
     font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
     .mb_hidden{
         a{
-            color: #252F3D;
+            color: #FFFFFF;
             font-size: 18px;
         &:hover{
-            transition:color 1s;
-            color: #b1afaf;   
+            border-bottom: solid 3px #FFFFFF;
+            padding-bottom: 5px; 
         }
     }
         @media (max-width:767px) {
@@ -181,10 +183,8 @@
     }
     .active_now{
         a{
-        color: #b1afaf;
-        &:hover{
-            color: #b1afaf;
-        }
+        border-bottom: solid 3px #FFFFFF;
+        padding-bottom: 5px; 
     }
     }
 }
@@ -194,7 +194,6 @@
     flex-direction: column;
     justify-content: center;
     max-height: 800px;
-    background-color: lighten(#8f4600,1%);
     @media (max-width:1190px) {
         max-height: 350px;
         margin-bottom: 50px;
@@ -204,8 +203,8 @@
     font-family: $font_page_title_family;
     line-height: 80px;
     text-align: center;
-    color: #FFFFFF;
-    font-weight: bolder;
+    color: lighten(#003247,1%);
+    font-weight: bold;
     @media (max-width:767px) {
         font-size: 28px;
         line-height: 40px;
@@ -263,8 +262,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 800px;
-    background-color:lighten(#252F3D,1%);
+    background-color:#004766;
     @media (max-width:1190px) {
         max-height: 350px;
         margin-bottom: 50px;
@@ -468,14 +466,18 @@
     }
 
     .more{
-        color: #916019;
-        font-weight: bolder;
-        /*background-color: #F7C244;
-        border-radius: 10px;*/
+        color: #FFFFFF;
+        background-color: #252F3D;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 7px;
+        display: inline;
         &:hover{
-            /*background-color: lighten(#F7C244,10%);*/
-            color: #deb887;
-            transition:background-color 1s;     
+            color: #003247;
+            background-color: #FFFFFF;
+            border:#252F3D 2px solid;
+            transition: color 0.3s;
+            transition: background-color 0.3s;
         }
         @media (max-width:767px) {
             font-size: 14px;
@@ -529,6 +531,12 @@
 
     .text{
         max-width:420px;
+        h3{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        p{
+            font-family:'Rubik', sans-serif;
+        }
         @media (max-width:1190px) {
             margin-left: 10px;
         }
@@ -609,16 +617,16 @@
 
 .more_work{
     font-weight: bolder;
-    border:  2px solid 	#004B97;
+    border:  2px solid 	#252F3D;
     background-color: white;
-    color:#004B97;
+    color:#252F3D;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     &:hover{
-        background-color:#004B97;
+        background-color:#252F3D;
         color: #FFFFFF;
         transition:background-color 2s; 
         transition:color 0.5s;     
@@ -647,20 +655,41 @@
     }
     .about_txt{
         max-width: 700px;
-        h2{
-            font-size: 36px;
-            font-weight: bold;
-            border:  lighten(#916019,30%) 5px solid;
-            display: inline-block;
-            padding: 20px;
-            @media (max-width:1190px) {
-                font-family: 24px;
+        .Name{
+                position: relative;
+                font-family: $font_page_title_family;
+                font-weight: bold;
+                color: #FFFFFF;
+                background-color:  #003247;
+                display: inline-block;
+                padding: 20px;
+                font-size: 50px;
+                @media (max-width:1190px) {
+                    background-color: #FFFFFF;
+                    color: #003247;
+                    font-size: 40px;
+                    text-align: center;
+                    margin-top: 40px;
+                    border:none;
+                    display: block;
+                }  
+            span{
+                position: absolute;
+                color: #FFFFFF;
+                background-color: lighten(#663000,10%);
+                padding:10px;
+                border-radius: 16px;
+                font-size: 12px;
                 text-align: center;
-                margin-top: 40px;
-                border:none;
-                display: block;
+                position: absolute;
+                top:-20px;
+                right:-20px;
+                @media (max-width:1190px) {
+                    display: none;
+                }
             }
         }
+
         p{
             font-size: 16px;
             line-height: 24px;
@@ -721,7 +750,7 @@
     display: none;
     margin-top: 20px;
     border:none;
-    color: #252F3D;
+    color:#FFFFFF;
     @media (max-width: 767px) {
         margin-top: 5px;
       }
