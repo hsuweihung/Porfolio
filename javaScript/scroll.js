@@ -9,10 +9,10 @@ function LandingPageScrollTrigger() {
 
     let LandingPageScrollTrigger = gsap.timeline({
         scrollTrigger: {
-            trigger: ".landingPage",
+            trigger: ".wrap",
             start: "0% 100%",
+            toggleActions: "restart restart",
             end: "50% 0%",
-            // markers: "true",
         }
     })
     LandingPageScrollTrigger

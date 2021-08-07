@@ -132,7 +132,7 @@
 .header{
     display: flex;
     justify-content: space-around;
-    background-color:lighten(#121212,5%);
+    background-color:lighten(#b1afaf,30%);
     .logo{
         display: flex;
     }
@@ -167,10 +167,10 @@
     font-family: 'Ubuntu', sans-serif;
     .mb_hidden{
         a{
-            color: #FFFFFF;
+            color: #252F3D;
             font-size: 18px;
         &:hover{
-            border-bottom: solid 3px #FFFFFF;
+            border-bottom: solid 3px #252F3D;
             padding-bottom: 5px; 
         }
     }
@@ -183,7 +183,7 @@
     }
     .active_now{
         a{
-        border-bottom: solid 3px #FFFFFF;
+        border-bottom: solid 3px #252F3D;
         padding-bottom: 5px; 
     }
     }
@@ -750,7 +750,7 @@
     display: none;
     margin-top: 20px;
     border:none;
-    color:#FFFFFF;
+    color:#252F3D;
     @media (max-width: 767px) {
         margin-top: 5px;
       }

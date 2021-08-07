@@ -485,7 +485,7 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #1f1f1f;
+  background-color: #fdfcfc;
 }
 .header .logo {
   display: -webkit-box;
@@ -534,11 +534,11 @@ a {
   font-family: "Ubuntu", sans-serif;
 }
 .menu .mb_hidden a {
-  color: #FFFFFF;
+  color: #252F3D;
   font-size: 18px;
 }
 .menu .mb_hidden a:hover {
-  border-bottom: solid 3px #FFFFFF;
+  border-bottom: solid 3px #252F3D;
   padding-bottom: 5px;
 }
 @media (max-width: 767px) {
@@ -552,7 +552,7 @@ a {
   }
 }
 .menu .active_now a {
-  border-bottom: solid 3px #FFFFFF;
+  border-bottom: solid 3px #252F3D;
   padding-bottom: 5px;
 }
 
@@ -1288,7 +1288,7 @@ a {
   display: none;
   margin-top: 20px;
   border: none;
-  color: #FFFFFF;
+  color: #252F3D;
 }
 @media (max-width: 767px) {
   .ham-icon {
