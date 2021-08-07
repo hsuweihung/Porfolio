@@ -132,7 +132,8 @@
 .header{
     display: flex;
     justify-content: space-around;
-    background-color:lighten(#b1afaf,30%);
+    /*background-color:lighten(#b1afaf,30%);*/
+    border-bottom: lighten(#b1afaf,25%) 0.5px solid;
     .logo{
         display: flex;
     }
@@ -153,10 +154,12 @@
         width: 100%;
         justify-content: space-around;
         border-bottom: none;
+        border-bottom: lighten(#b1afaf,25%) 0.5px solid;
     }
     
     @media (max-width:767px) {
         width: 100%;
+        border-bottom: lighten(#b1afaf,25%) 0.5px solid;
     }
 }
 

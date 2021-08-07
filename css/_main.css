@@ -485,7 +485,8 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #fdfcfc;
+  /*background-color:lighten(#b1afaf,30%);*/
+  border-bottom: #f0f0f0 0.5px solid;
 }
 .header .logo {
   display: -webkit-box;
@@ -515,11 +516,13 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border-bottom: none;
+    border-bottom: #f0f0f0 0.5px solid;
   }
 }
 @media (max-width: 767px) {
   .header {
     width: 100%;
+    border-bottom: #f0f0f0 0.5px solid;
   }
 }
 
