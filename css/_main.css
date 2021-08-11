@@ -498,7 +498,7 @@ a {
 }
 @media (max-width: 767px) {
   .header .header_link {
-    width: 250px;
+    width: 350px;
   }
 }
 .header .logo_icon {
