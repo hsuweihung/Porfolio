@@ -493,6 +493,14 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+.header .header_link {
+  width: 220px;
+}
+@media (max-width: 767px) {
+  .header .header_link {
+    width: 180px;
+  }
+}
 .header .logo_icon {
   width: 30px;
 }
@@ -507,7 +515,7 @@ a {
 @media (max-width: 767px) {
   .header .logo_txt {
     width: 120px;
-    margin-top: 3px;
+    padding-bottom: 3px;
   }
 }
 @media (max-width: 1190px) {
