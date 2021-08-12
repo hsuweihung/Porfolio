@@ -512,6 +512,11 @@ a {
 .header .logo_txt {
   width: 150px;
 }
+@media (max-width: 767px) {
+  .header .logo_txt {
+    display: none;
+  }
+}
 @media (max-width: 1190px) {
   .header {
     width: 100%;

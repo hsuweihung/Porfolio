@@ -151,6 +151,9 @@
     }
     .logo_txt{
         width: 150px;
+        @media (max-width:767px) {
+            display: none;
+        }
     }
     @media (max-width:1190px) {
         width: 100%;
