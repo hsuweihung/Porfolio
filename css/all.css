@@ -498,7 +498,7 @@ a {
 }
 @media (max-width: 767px) {
   .header .header_link {
-    width: 350px;
+    width: 250px;
   }
 }
 .header .logo_icon {
@@ -514,8 +514,8 @@ a {
 }
 @media (max-width: 767px) {
   .header .logo_txt {
-    width: 120px;
-    padding-bottom: 3px;
+    width: 140px;
+    padding-bottom: 2px;
   }
 }
 @media (max-width: 1190px) {
