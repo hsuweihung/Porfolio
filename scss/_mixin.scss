@@ -1,7 +1,61 @@
+@mixin header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #191919;
+    @media (max-width:1190px) {
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: none;
+    }
+    
+    @media (max-width:767px) {
+        width: 100%;
+    }
+}
+
+@mixin menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin banner_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 800px;
+    @media (max-width:1190px) {
+        max-height: 350px;
+        margin-bottom: 50px;
+    }
+    @media (max-width:767px) {
+        margin-top: 40px;
+    }
+}
+
+@mixin banner_work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width:1190px) {
+        max-height: 350px;
+        margin-bottom: 50px;
+    }   
+    @media (max-width:767px) {
+        margin-top: 40px;
+    }
+}
+
 @mixin project {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width:768px) {
+        margin-bottom: -50px;
+    }
+    @media (max-width:767px) {
+        margin-top: 100px;
+    }
 }
 
 @mixin module_right {
@@ -11,14 +65,237 @@
     flex-direction: row-reverse;
 }
 
+@mixin module_right_1190{
+    @media (max-width:1190px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@mixin module_right_768 {
+    @media (max-width:768px) {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+
 @mixin module_left{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+@mixin module_left_1190{
+    @media (max-width:1190px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@mixin module_left_768{
+    @media (max-width:768px) {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+@mixin more {
+        color: #000;
+        background-color: #FFFFFF;
+        border:#252F3D 2px solid;
+        border-radius: 7px;
+        font-weight: bold;
+        padding: 10px;
+        display: inline;
+        &:hover{
+            color: #FFFFFF;
+            border: #F0F0F0 1px solid;
+            background-color: #212121;
+            transition: color 0.3s;
+            transition: background-color 0.3s;
+        }
+}
+
+@mixin item_right {
+    display: flex;
+    max-width: 550px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+}
+
+@mixin item_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 550px;
+        margin-right: 50px;
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+            margin-top: 8px;
+            margin-right: 0px;
+        }
+}
+
+@mixin img {
+    .project_img{
+        width: 600px;
+    }
+
+    .module_img{
+        width:100%;
+        object-fit: cover;
+        object-position:left;
+        @media (max-width:1190px) {
+            height: 350px;
+            object-fit: cover;
+            object-position: 20%
+        }
+        @media (max-width:768px) {
+            height: 350px;
+        }
+        @media (max-height:414px) {
+            height: 250px;
+            margin-top: 50px;
+        }
+    }
+}
+
+@mixin card{
+    .card_1{
+        margin-right: 100px;
+        h3{
+            color: #F0F0F0;
+        }
+        @media (max-width:768px) {
+            margin-right: 0px;
+            margin-bottom: 100px;
+        }
+        h3{
+            font-size: 20px;
+            font-family: $font_p_title_family;
+            font-weight: bold;
+        }
+    }
+    
+    .card_2{
+        h3{
+            color: #F0F0F0;
+            font-size: 20px;
+            font-family: $font_p_title_family;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin more_work{
+    .more_work{
+        font-weight: bolder;
+        border:  2px solid #252F3D;
+        background-color: #F0F0F0;
+        color:#000;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        &:hover{
+            background-color:#212121;
+            color: #F0F0F0;
+            border: #F0F0F0 1px solid;
+            transition: color 0.3s;
+            transition: background-color 0.3s;  
+        }
+    }
+}
+
+@mixin about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:1190px) {
+        margin-top: 200px;
+    }
+}
+
+@mixin  about_img {
+    .about_img{
+    @media (max-width:1190px) {
+        margin-right: 0px;
+    }
+}
+    img{
+        width: 350px;
+        @media (max-width:1190px) {
+            width: 300px;
+    }
+    }
+}
+
+@mixin Name {
+    .Name{
+        position: relative;
+        font-family: $font_page_title_family;
+        font-weight: bold;
+        color: #FFFFFF;
+        display: inline-block;
+        padding: 20px;
+        font-size: 60px;
+        line-height: 100px;
+        @media (max-width:1190px) {
+            font-size: 40px;
+            line-height: 80px;
+            text-align: center;
+            margin-top: 40px;
+            border:none;
+            display: block;
+        }
+        @media (max-width:767px) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@mixin connect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@mixin footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@mixin about_footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 @mixin mb_hidden {
     .mb_hidden{
-    display: none;
-} 
+        display: none;
+    } 
 }
