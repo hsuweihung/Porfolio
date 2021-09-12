@@ -196,7 +196,8 @@ section .footer{
     .logo_icon{
         width: 30px;
         @media (max-width:767px) {
-            width: 40px;
+            width: 30px;
+            margin-top: 3px;
         }
     }
 
@@ -683,13 +684,16 @@ section .footer{
     border:none;
     color: #F0F0F0;
     @media (max-width: 767px) {
-        margin-top: 5px;
+        margin-top: 3px;
       }
 }
 
 .ham-icon i {
     font-size: 30px;
+    @media (max-width: 767px) {
+        font-size: 25px;
   }
+}
   
   @media (max-width: 767px) {
     .ham-icon {
