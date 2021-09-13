@@ -410,29 +410,6 @@ section .footer{
     }
 }
 
-.work_title{
-    text-align: center;
-    h1{
-        display: inline;
-        padding-bottom: 20px;
-        font-size: 40px;
-        color: #F0F0F0;
-        font-family: $font_section_title_family;
-        font-weight: bold;
-        border-bottom: 2px solid #F0F0F0;
-        @media (max-width:320px) {
-            font-size: 18px;
-        }
-        @media (max-width:767px) {
-            font-size: 24px;
-        }
-    }
-    @media (max-width:767px) {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-}
-
 .project{
     @include project;
     h3{
@@ -489,6 +466,11 @@ section .footer{
         @include item_right;
         h3{
             color: #F0F0F0;
+            font-size: $font_size_project_title;
+            }
+        p{
+            font-size:$font_size_project_p;
+            line-height:30px;
             }
         a{
             @media (max-width:768px) {
@@ -501,6 +483,11 @@ section .footer{
         @include item_left;
         h3{
             color: #F0F0F0;
+            font-size: $font_size_project_title;
+            }
+        p{
+            font-size:$font_size_project_p;
+            line-height:30px;
             }
         a{
             @media (max-width:768px) {
@@ -534,6 +521,9 @@ section .footer{
     width: 350px;
     }
     @include more_work;
+    @media (max-width:767px) {
+        margin-top: 100px;
+    }
     @media (max-width:320px) {
             font-size: 12px;
         }
