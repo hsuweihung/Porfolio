@@ -244,8 +244,8 @@ section .footer{
     color: #F0F0F0;
     font-weight: bold;
     @media (max-width:767px) {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 50px;
+        line-height: 70px;
         margin-bottom: 5px;
     }
     @media (max-width:320px) {
@@ -467,6 +467,9 @@ section .footer{
         h3{
             color: #F0F0F0;
             font-size: $font_size_project_title;
+            @media (max-width:767px) {
+                font-size: 24px;
+            }
             }
         p{
             font-size:$font_size_project_p;
@@ -484,6 +487,9 @@ section .footer{
         h3{
             color: #F0F0F0;
             font-size: $font_size_project_title;
+            @media (max-width:767px) {
+                font-size: 24px;
+            }
             }
         p{
             font-size:$font_size_project_p;

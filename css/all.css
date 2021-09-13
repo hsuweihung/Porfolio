@@ -279,7 +279,7 @@
 @media (max-width: 767px) {
   .work_title {
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .work_title h1 {
     font-size: 32px;
@@ -682,8 +682,8 @@ section .footer {
 }
 @media (max-width: 767px) {
   .banner_txt h1 {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 70px;
     margin-bottom: 5px;
   }
 }
@@ -1053,6 +1053,11 @@ section .footer {
   color: #F0F0F0;
   font-size: 40px;
 }
+@media (max-width: 767px) {
+  .project .item_right h3 {
+    font-size: 24px;
+  }
+}
 .project .item_right p {
   font-size: 18px;
   line-height: 30px;
@@ -1086,6 +1091,11 @@ section .footer {
 .project .item_left h3 {
   color: #F0F0F0;
   font-size: 40px;
+}
+@media (max-width: 767px) {
+  .project .item_left h3 {
+    font-size: 24px;
+  }
 }
 .project .item_left p {
   font-size: 18px;
