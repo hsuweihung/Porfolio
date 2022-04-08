@@ -119,11 +119,11 @@
   }
 
 body{
-    background-color:#212121;;
+    background-color:#121212;
 }
 
 section .footer{
-    background-color:#191919;
+    background-color:#FFFFFF;
 }
 
 .hidden_txt{
@@ -354,6 +354,15 @@ section .footer{
 
 }
 
+.pc_hidden{
+    display: none;
+    @media (max-width:767px) {
+        display: block;
+    }
+    @media (max-height:414px) {
+        display: block;
+    }
+}
 .pad{
     @media (max-width:1190px) {
         padding-bottom: 60px;
